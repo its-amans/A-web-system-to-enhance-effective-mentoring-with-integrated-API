@@ -60,13 +60,15 @@ height:70px;
     cursor:pointer;
 }
 
-/* ------------Landing Page------------- */
+/* ----------------front------------------ */
+
 .front{
     display:flex;
     flex-direction:column;
     position:relative;
-    background-image:url('App/Images/front.jpg');
-    background-size: cover;
+    background-image:url('Images/StoryCover.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
     height:88vh;
     justify-content: center;
 }
@@ -95,202 +97,6 @@ height:70px;
     margin:30px;
     line-height:2;
 }
-.join{
-    color:#ffd24a;
-    border:2px solid #ffd24a;
-    text-align:center;
-    width:200px;
-    height:65px;
-    font-size:20px;
-    display:flex;
-    justify-content:center;
-    margin:30px auto;
-    align-items:center;
-    transition: background-color 0.3s ease;
-}
-.join:hover{
-    background-color:#ffd24a;
-    color:#213b7d;
-    cursor:pointer;
-}
-
-/* ---------Bottom-section---------------- */
-.frontSupportSection{
-    display:flex;
-    color: #113297;
-    font-size:1.8rem;
-    align-items:center;
-    justify-content: center;
-    background-color:#ffd24a;
-    height:200px;
-    text-align:center;
-}
-.frontSupportSection h1{
-    padding:100px;
-    font-weight:600px;
-}
-.frontGainSection{
-    display:flex;
-    color:white;
-    font-size:2rem;
-    background-color:#113297;
-    text-align:center;
-    height:250px;
-}
-.frontGainSection h4{
-    float:left;
-    margin:50px;
-}
-.frontGainSection ul {
-    float: right;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; 
-    width: 600px;
-    margin: 50px 50px 50px 250px;
-    padding: 0 20px 20px 20px; 
-    list-style-position: outside; 
-}
-
-.frontGainSection ul li {
-    font-size: 22px;
-    text-align: left;
-    color: white;
-    margin-bottom: 10px; 
-    line-height: 1.5; 
-}
-
-
-/* ---------RecordSuccess----------- */
-.recordSuccsess{
-    margin:50px 100px;
-}
-.recordSuccsess h2{
-    color:#113297;
-    font-size:40px;
-    margin-bottom:10px;
-    text-align: center;
-}
-.recordSuccsess p{
-    font-size:22px;
-    margin:20px 0px;
-}
-.veiwMore{
-    color:#213b7d;
-    border:2px solid #213b7d;
-    text-align:center;
-    width:200px;
-    height:65px;
-    font-size:20px;
-    display:flex;
-    justify-content:center;
-    margin:50px auto;
-    align-items:center;
-    transition: background-color 0.3s ease;
-}
-.veiwMore:hover{
-    background-color:#213b7d;
-    color:#ffd24a;
-    cursor:pointer;
-}
-
-/* -----------cofounderThought-------------- */
-
-.coFounderThought{
-    display:flex;
-    justify-content:center;
-    text-align:center;
-    flex-direction:column;
-    align-items:center;
-    background-color:#113297;
-    color:white;
-    padding:150px 300px;
-}
-.coFounderThought h1{
-    margin:50px;
-    font-size:35px;
-}
-.coFounderThought h2{
-    font-size:22px;
-}
-
-
-/* -------------mentors Section----------------- */
-.mentorSection{
-    padding:50px 0px;
-    background-color:#3e3d3d;
-}
-.mentorHead{
-    margin:0px 400px;
-    color:white;
-}
-.mentorHead p{
-    text-align:center;
-    margin:20px 0px;
-    font-size:20px;
-}
-.mentorHead h1{
-    text-align:center;
-    font-size:40px;
-}
-.mentor{
-    display:flex;
-    margin:100px 150px;
-}
-.mentorCard{
-    height:700px;
-    width:380px;
-    border-radius:10px;
-    margin:0 10px;
-    background-color:white;
-}
-.mentorImage{
-    background-image:url("App/Images/aman.jpg");
-    background-size:cover;
-    padding:200px 0px 10px 10px;
-    border-radius:10px;
-}
-.mentorImage span{
-    font-size:25px;
-    color:white;
-}
-.mentorDetail{
-    margin:20px 10px;
-}
-.headerInfo{
-    margin:10px;
-    font-size:18px;
-    color:#6b7280
-}
-.headerInfo i{
-    margin-right:4px;
-}
-.detailInfo{
-    font-size:18px;
-    word-spacing: 3px;
-    color:#6b7280;
-    margin:10px;
-}
-.veiwMoreMentor{
-    color:#ffd24a;
-    border:2px solid #ffd24a;
-    text-align:center;
-    width:200px;
-    height:65px;
-    font-size:20px;
-    display:flex;
-    justify-content:center;
-    margin:50px auto;
-    align-items:center;
-    transition: background-color 0.3s ease;
-}
-.veiwMoreMentor:hover{
-    background-color:#ffd24a;
-    color:#3e3d3d;
-    cursor:pointer;
-}
-
-/* ----------mentee section------------- */
 .menteeSection{
     margin:50px 0px;
 }
@@ -313,7 +119,6 @@ height:70px;
     align-items:center;
 }
 .feedbackCard{
-    height:200px;
     border-radius:10px;
     box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.5);
     width:600px;
@@ -327,27 +132,6 @@ height:70px;
     font-size:20px;
     margin:20px;
 }
-.veiwMoreMentee{
-    color:#113297;
-    border:2px solid #113297;
-    text-align:center;
-    width:200px;
-    height:65px;
-    font-size:20px;
-    display:flex;
-    justify-content:center;
-    margin:50px auto;
-    align-items:center;
-    transition: background-color 0.3s ease;
-}
-.veiwMoreMentee:hover{
-    background-color:#113297;
-    color:#ffd24a;
-    cursor:pointer;
-}
-
-
-/* --------- */
 .faq-section {
     display: flex;
     flex-direction: row;
