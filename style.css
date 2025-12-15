@@ -1,474 +1,221 @@
-*{  font-family: Arial, sans-serif;
-    margin:0;
-    padding:0;
-}
-/* -------------Header-------------- */
-.header{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 30px;
-height:70px;
-}
-.logoSection{
-    display:flex;
-    align-items:center;
-    justify-content:center;  
-}
-.logo{
-    margin:2px;
-}
-.rightSection{
-    display:flex;
-    align-items:center;
-    justify-content: center;
-}
-.headerOptions{
-    
-}
-.headList{
-    display:flex;
-    list-style:none;
-    margin:10px;
-}
-.items{
-    padding:8px;
-    font-size:15px;
-    font-weight:300;
-}
-.items a{
-    text-decoration: none;
-    padding:8px;
-    font-size:15px;
-    font-weight:300;
-    color:black;
-}
-.applySection{
+/* ==================================================
+   HOME PAGE STYLES ONLY
+   (Hero, Home Sections, Home-only Content)
+   ================================================== */
 
-}
-.applyButton{
-    color:#213b7d;
-    text-align:center;
-    font-size:15px;
-    padding:5px;
-    background-color:white;
-    border:2px solid #113297;
-}
-.applyButton:hover{
-    background-color:#113297;
-    color:white;
-    cursor:pointer;
+/* ================= HERO / LANDING ================= */
+.front {
+  position: relative;
+  min-height: 88vh;
+  background-image: url("App/Images/front.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
 }
 
-/* ------------Landing Page------------- */
-.front{
-    display:flex;
-    flex-direction:column;
-    position:relative;
-    background-image:url('App/Images/front.jpg');
-    background-size: cover;
-    height:88vh;
-    justify-content: center;
-}
-.overlay{
-    position:absolute;
-    background-color:rgba(33, 59, 125,0.8);
-    height:88vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    flex-direction:column;
-}
-.front-content{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    margin:0 245px;
-}
-.front-content h1{
-    color:white;
-    font-size:2.7rem;
-    line-height: 1.2em;
-}
-.space{
-    margin:30px;
-    line-height:2;
-}
-.join{
-    color:#ffd24a;
-    border:2px solid #ffd24a;
-    text-align:center;
-    width:200px;
-    height:65px;
-    font-size:20px;
-    display:flex;
-    justify-content:center;
-    margin:30px auto;
-    align-items:center;
-    transition: background-color 0.3s ease;
-}
-.join:hover{
-    background-color:#ffd24a;
-    color:#213b7d;
-    cursor:pointer;
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(33, 59, 125, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  flex-direction: column;
 }
 
-/* ---------Bottom-section---------------- */
-.frontSupportSection{
-    display:flex;
-    color: #113297;
-    font-size:1.8rem;
-    align-items:center;
-    justify-content: center;
-    background-color:#ffd24a;
-    height:200px;
-    text-align:center;
+.front-content {
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+  padding: 0 20px;
 }
-.frontSupportSection h1{
-    padding:100px;
-    font-weight:600px;
+
+.front-content h1 {
+  color: white;
+  font-size: 2.7rem;
+  line-height: 1.3;
 }
-.frontGainSection{
-    display:flex;
-    color:white;
-    font-size:2rem;
-    background-color:#113297;
-    text-align:center;
-    height:250px;
+
+/* CTA Button */
+.join {
+  margin-bottom: 30px;
+  width: 200px;
+  height: 60px;
+  border: 2px solid #ffd24a;
+  color: #ffd24a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s ease;
 }
-.frontGainSection h4{
-    float:left;
-    margin:50px;
+
+.join:hover {
+  background-color: #ffd24a;
+  color: #213b7d;
 }
+
+/* ================= HOME MENTOR PREVIEW ================= */
+.home-mentor-preview .mentor {
+  margin-top: 30px;
+}
+
+/* Optional: limit cards on home */
+.home-mentor-preview .mentorCard {
+  max-width: 360px;
+}
+
+/* ================= HOME MENTEE PREVIEW ================= */
+.home-mentee-preview .menteeFeedback {
+  margin-top: 30px;
+}
+
+.home-mentee-preview .feedbackCard {
+  max-width: 520px;
+}
+
+
+/* ================= SUPPORT SECTION ================= */
+.frontSupportSection {
+  background-color: #ffd24a;
+  color: #113297;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.frontSupportSection h1 {
+  max-width: 1000px;
+  margin: auto;
+  font-size: 1.8rem;
+}
+
+/* ================= GAIN SECTION ================= */
+.frontGainSection {
+  background-color: #113297;
+  color: white;
+  padding: 80px 20px;
+}
+
+.frontGainSection h4 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
 .frontGainSection ul {
-    float: right;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; 
-    width: 600px;
-    margin: 50px 50px 50px 250px;
-    padding: 0 20px 20px 20px; 
-    list-style-position: outside; 
+  max-width: 900px;
+  margin: auto;
+  list-style-position: outside;
+  padding-left: 20px;
 }
 
-.frontGainSection ul li {
-    font-size: 22px;
-    text-align: left;
-    color: white;
-    margin-bottom: 10px; 
-    line-height: 1.5; 
+.frontGainSection li {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+  line-height: 1.6;
 }
 
-
-/* ---------RecordSuccess----------- */
-.recordSuccsess{
-    margin:50px 100px;
-}
-.recordSuccsess h2{
-    color:#113297;
-    font-size:40px;
-    margin-bottom:10px;
-    text-align: center;
-}
-.recordSuccsess p{
-    font-size:22px;
-    margin:20px 0px;
-}
-.veiwMore{
-    color:#213b7d;
-    border:2px solid #213b7d;
-    text-align:center;
-    width:200px;
-    height:65px;
-    font-size:20px;
-    display:flex;
-    justify-content:center;
-    margin:50px auto;
-    align-items:center;
-    transition: background-color 0.3s ease;
-}
-.veiwMore:hover{
-    background-color:#213b7d;
-    color:#ffd24a;
-    cursor:pointer;
+/* ================= RECORD SUCCESS ================= */
+.recordSuccsess {
+  max-width: 1100px;
+  margin: 80px auto;
+  padding: 0 20px;
 }
 
-/* -----------cofounderThought-------------- */
-
-.coFounderThought{
-    display:flex;
-    justify-content:center;
-    text-align:center;
-    flex-direction:column;
-    align-items:center;
-    background-color:#113297;
-    color:white;
-    padding:150px 300px;
-}
-.coFounderThought h1{
-    margin:50px;
-    font-size:35px;
-}
-.coFounderThought h2{
-    font-size:22px;
+.recordSuccsess h2 {
+  text-align: center;
+  color: #113297;
+  font-size: 40px;
 }
 
-
-/* -------------mentors Section----------------- */
-.mentorSection{
-    padding:50px 0px;
-    background-color:#3e3d3d;
-}
-.mentorHead{
-    margin:0px 400px;
-    color:white;
-}
-.mentorHead p{
-    text-align:center;
-    margin:20px 0px;
-    font-size:20px;
-}
-.mentorHead h1{
-    text-align:center;
-    font-size:40px;
-}
-.mentor{
-    display:flex;
-    margin:100px 150px;
-}
-.mentorCard{
-    height:700px;
-    width:380px;
-    border-radius:10px;
-    margin:0 10px;
-    background-color:white;
-}
-.mentorImage{
-    background-image:url("App/Images/aman.jpg");
-    background-size:cover;
-    padding:200px 0px 10px 10px;
-    border-radius:10px;
-}
-.mentorImage span{
-    font-size:25px;
-    color:white;
-}
-.mentorDetail{
-    margin:20px 10px;
-}
-.headerInfo{
-    margin:10px;
-    font-size:18px;
-    color:#6b7280
-}
-.headerInfo i{
-    margin-right:4px;
-}
-.detailInfo{
-    font-size:18px;
-    word-spacing: 3px;
-    color:#6b7280;
-    margin:10px;
-}
-.veiwMoreMentor{
-    color:#ffd24a;
-    border:2px solid #ffd24a;
-    text-align:center;
-    width:200px;
-    height:65px;
-    font-size:20px;
-    display:flex;
-    justify-content:center;
-    margin:50px auto;
-    align-items:center;
-    transition: background-color 0.3s ease;
-}
-.veiwMoreMentor:hover{
-    background-color:#ffd24a;
-    color:#3e3d3d;
-    cursor:pointer;
+.recordSuccsess p {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  line-height: 1.6;
 }
 
-/* ----------mentee section------------- */
-.menteeSection{
-    margin:50px 0px;
-}
-.menteeHead{
-    margin:0px 400px;
-}
-.menteeHead h1{
-    text-align:center;
-    font-size:40px;
-}
-.menteeHead p{
-    text-align:center;
-    margin:20px 0px;
-    font-size:17px;
-}
-.menteeFeedback{
-    display:flex;
-    margin:65px;
-    justify-content: center;
-    align-items:center;
-}
-.feedbackCard{
-    height:200px;
-    border-radius:10px;
-    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.5);
-    width:600px;
-    margin:10px;
-}
-.feedbackCard h1{
-    margin:20px;
-    font-size:25px;
-}
-.feedbackCard p{
-    font-size:20px;
-    margin:20px;
-}
-.veiwMoreMentee{
-    color:#113297;
-    border:2px solid #113297;
-    text-align:center;
-    width:200px;
-    height:65px;
-    font-size:20px;
-    display:flex;
-    justify-content:center;
-    margin:50px auto;
-    align-items:center;
-    transition: background-color 0.3s ease;
-}
-.veiwMoreMentee:hover{
-    background-color:#113297;
-    color:#ffd24a;
-    cursor:pointer;
+.veiwMore {
+  margin: 40px auto;
+  width: 200px;
+  height: 60px;
+  border: 2px solid #213b7d;
+  color: #213b7d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s ease;
 }
 
+.veiwMore:hover {
+  background-color: #213b7d;
+  color: #ffd24a;
+}
 
-/* --------- */
-.faq-section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    background-color: rgba(255, 210, 74,1);
-    padding:100px 200px;
-    gap: 20px;
+/* ================= CO-FOUNDER QUOTE ================= */
+.coFounderThought {
+  background-color: #113297;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.coFounderThought h1 {
+  max-width: 900px;
+  margin: auto;
+  font-size: 2.2rem;
+}
+
+.coFounderThought h2 {
+  margin-top: 30px;
+  font-size: 1.3rem;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* Tablet */
+@media (max-width: 768px) {
+  .front-content h1 {
+    font-size: 2rem;
   }
-  
-  .faq-left {
-    flex: 1;
-    max-width: 40%;
+
+  .frontSupportSection h1 {
+    font-size: 1.5rem;
   }
-  
-  .faq-left h2 {
-    font-size: 18px;
-    text-transform: uppercase;
-    color: #888;
-    margin-bottom: 10px;
+
+  .recordSuccsess h2 {
+    font-size: 32px;
   }
-  
-  .faq-left h1 {
-    font-size: 45px;
-    font-weight: bold;
-    line-height: 1.3;
+
+  .coFounderThought h1 {
+    font-size: 1.8rem;
   }
-  
-  .connect-btn {
-    display: flex;
-    align-items: center;
-    padding: 10px 20px;
-    margin-top: 20px;
-    background-color: #f5f5f5;
-    border: 1px solid #ccc;
-    border-radius: 25px;
-    cursor: pointer;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .front-content h1 {
+    font-size: 1.6rem;
+  }
+
+  .join {
+    width: 160px;
+    height: 50px;
     font-size: 16px;
-    color: #333;
-  }
-  
-  .connect-btn i {
-    font-size: 20px;
-    margin-left: 10px;
-  }
-  
-  .faq-right {
-    flex: 1;
-    max-width: 50%;
-  }
-  
-  .faq-right ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .faq-right li {
-    font-size: 26px;
-    font-weight: 600;
-    padding: 10px 0;
-    padding-top:30px;
-    border-bottom: 1px solid #3e3d3d;
   }
 
+  .frontGainSection h4 {
+    font-size: 1.6rem;
+  }
 
-  /* --------------register--------------- */
-  /* General styles for the Register section */
-.register {
-    text-align: center;
-    background-color: white; 
-    padding: 100px 20px;
-    margin: 0 auto;
-}
-
-.register h1 {
-    font-size: 2.5rem;
-    color: black;
-    margin-bottom: 20px;
-}
-
-.registerform {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0; 
-    margin-bottom: 20px;
-}
-
-.email-input {
-    width: 300px;
-    padding: 10px;
-    height:50px;
+  .frontGainSection li {
     font-size: 1rem;
-    border: 1px solid white; 
-    border-radius: 20px 0 0 20px; 
-    outline: none;
-}
+  }
 
-.connect-button {
-    padding: 10px 20px;
-    font-size: 1rem;
-    border: none;
-    background-color: #113297;
-    color: #ffd24a; 
-    border-radius: 0 20px 20px 0; 
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.connect-button:hover {
-    cursor:pointer;
-    color:#113297;
-    background-color:white;
-    border:2px solid #113297;
-}
-
-.footer-text {
-    font-size: 1.2rem;
-    color: rgba(62, 61, 61,0.7); 
-    text-transform: uppercase;
-    letter-spacing: 2px; 
-    margin-top: 30px;
+  .coFounderThought h1 {
+    font-size: 1.5rem;
+  }
 }

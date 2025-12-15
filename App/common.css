@@ -1,0 +1,335 @@
+/* ================= RESET / BASE ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ================= HEADER ================= */
+.header {
+  position: relative; /* important for mobile menu */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.logoSection {
+  display: flex;
+  align-items: center;
+}
+
+.rightSection {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Navigation */
+.headList {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+
+.headList a {
+  text-decoration: none;
+  font-size: 15px;
+  color: black;
+}
+
+/* CTA Button */
+.applyButton {
+  padding: 6px 14px;
+  font-size: 15px;
+  background-color: white;
+  color: #213b7d;
+  border: 2px solid #113297;
+  cursor: pointer;
+}
+
+.applyButton:hover {
+  background-color: #113297;
+  color: white;
+}
+
+/* ================= HAMBURGER ================= */
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* ================= MENTOR SECTION (COMMON) ================= */
+.mentorSection {
+  background-color: #3e3d3d;
+  padding: 60px 20px;
+}
+
+.mentorHead {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+  color: white;
+}
+
+.mentorHead h1 {
+  font-size: 40px;
+}
+
+.mentorHead p {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.mentor {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.mentorCard {
+  background-color: white;
+  border-radius: 10px;
+  max-width: 380px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.mentorImage {
+  background-image: url("Images/aman.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 180px 10px 10px;
+}
+
+.mentorImage span {
+  color: white;
+  font-size: 22px;
+}
+
+.mentorDetail {
+  padding: 15px;
+}
+
+.headerInfo {
+  font-size: 16px;
+  color: #6b7280;
+  margin: 8px 0;
+}
+
+.headerInfo i {
+  margin-right: 6px;
+}
+
+.detailInfo {
+  font-size: 16px;
+  color: #6b7280;
+  line-height: 1.5;
+}
+
+/* ================= MENTEE REVIEW (COMMON) ================= */
+.menteeSection {
+  padding: 60px 20px;
+}
+
+.menteeHead {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+.menteeHead h1 {
+  font-size: 40px;
+}
+
+.menteeHead p {
+  margin-top: 20px;
+  font-size: 17px;
+}
+
+.menteeFeedback {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.feedbackCard {
+  background-color: white;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+}
+
+.feedbackCard h1 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.feedbackCard p {
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+/* ================= FAQ ================= */
+.faq-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  background-color: #ffd24a;
+  padding: 60px 20px;
+}
+
+.faq-left,
+.faq-right {
+  flex: 1 1 300px;
+}
+
+.faq-left h2 {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #666;
+}
+
+.faq-left h1 {
+  font-size: 36px;
+  margin: 10px 0;
+}
+
+.faq-right ul {
+  list-style: none;
+}
+
+.faq-right li {
+  font-size: 20px;
+  padding: 15px 0;
+  border-bottom: 1px solid #333;
+}
+
+/* FAQ Button */
+.connect-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f5f5f5;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.connect-btn i {
+  margin-left: 10px;
+}
+
+/* ================= REGISTER ================= */
+.register {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.register h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.registerform {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.email-input {
+  width: 280px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+}
+
+.connect-button {
+  padding: 12px 25px;
+  border-radius: 20px;
+  background-color: #113297;
+  color: #ffd24a;
+  border: none;
+  cursor: pointer;
+}
+
+.connect-button:hover {
+  background-color: white;
+  color: #113297;
+  border: 2px solid #113297;
+}
+
+.footer-text {
+  margin-top: 30px;
+  font-size: 1.2rem;
+  color: rgba(62, 61, 61, 0.7);
+  letter-spacing: 2px;
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+  .fa-solid{
+    font-size:1.5rem;
+  }
+  .logo{
+    margin: 0 4px;
+  }
+  .menu-toggle {
+    display: block;
+  }
+
+  .logo{
+    margin: 0 4px;
+  }
+  .rightSection {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .headList {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 70px);
+    background-color: #113297;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    gap: 20px;
+    display: none;
+    z-index: 999;
+  }
+
+  .headList.active {
+    display: flex;
+  }
+  
+  .items a{
+    color:white;
+  }
+
+  .applyButton {
+    width: 100%;
+  }
+}
+
+/* ================= UTILITIES ================= */
+.no-scroll {
+  overflow: hidden;
+}
