@@ -51,6 +51,7 @@
   font-size: 20px;
   cursor: pointer;
   transition: 0.3s ease;
+  text-decoration: none;
 }
 
 .join:hover {
@@ -67,6 +68,19 @@
 .home-mentor-preview .mentorCard {
   max-width: 360px;
 }
+.veiwMoreMentor{
+    text-align: center;
+    margin-top:20px;
+    transition:0.2s ease;
+}
+.veiwMoreMentor a{
+  text-decoration: none;
+  color:white;
+}
+.veiwMoreMentor:hover{
+    cursor:pointer;
+    font-size: large;
+}
 
 /* ================= HOME MENTEE PREVIEW ================= */
 .home-mentee-preview .menteeFeedback {
@@ -75,6 +89,19 @@
 
 .home-mentee-preview .feedbackCard {
   max-width: 520px;
+}
+.veiwMoreMentee{
+    text-align: center;
+    margin-top:20px;
+    transition:0.2s ease;
+}
+.veiwMoreMentee a{
+  text-decoration: none;
+  color:#113297;
+}
+.veiwMoreMentee:hover{
+    cursor:pointer;
+    font-size: large;
 }
 
 

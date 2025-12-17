@@ -184,6 +184,10 @@ img {
 }
 
 /* ================= FAQ ================= */
+/* ================= FAQ ACCORDION ================= */
+
+/* ===== FAQ ACCORDION (NO DESIGN CHANGE) ===== */
+
 .faq-section {
   display: flex;
   flex-wrap: wrap;
@@ -228,10 +232,52 @@ img {
   border: 1px solid #ccc;
   cursor: pointer;
 }
-
+.connect-btn a{
+  text-decoration: none;
+  color:black;
+}
 .connect-btn i {
   margin-left: 10px;
 }
+
+/* ===== FAQ ACCORDION (NO DESIGN CHANGE) ===== */
+
+/* ===== FAQ + / - ICON ===== */
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.faq-icon {
+  font-size: 28px;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+/* Answer hidden */
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+  transition: max-height 0.3s ease;
+}
+
+/* Active state */
+.faq-item.active .faq-answer {
+  max-height: 200px;
+  margin-top: 10px;
+}
+
+/* + becomes - */
+.faq-item.active .faq-icon {
+  content: "-";
+}
+
 
 /* ================= REGISTER ================= */
 .register {
